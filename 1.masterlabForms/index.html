@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Masteralb Forms Template</title>
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,900" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="wrapper">
+	<header>
+		<div class="logo">
+			<img src="pics/headerpic1.png">
+		</div>
+		<div class="main_text">
+			<img src="pics/headerpic2.png">
+		</div>
+	</header>
+	<section>
+		<div class="column">
+			<div class="register">
+				<h2>Register Form</h2>
+				<div class="container_form">
+					<form class="firstform">
+						<input type="text" name="username" placeholder="Username" required>
+						<input type="password" name="password" placeholder="Password" required>
+						<input type="password" name="confirm" placeholder="Confirm Password" required>
+						<input type="email" name="email" placeholder="Email" required>
+						<input class="location" list="city" name="location" placeholder="Your Location" required>
+						<datalist id="city">
+		                    <option value="Amsterdam">Amsterdam</option>
+		                    <option value="Rotterdam">Rotterdam</option>
+		                    <option value="Utrecht">Utrecht</option>
+						</datalist>
+						<div class="box">
+							<input type="checkbox" id="info1">
+							<label for="info1">I have read and accept the terms of use.
+							</label>
+						</div>
+						<input type="submit" name="submit" value="Sign up">
+					</form>
+				</div>
+			</div>
+
+			<div class="form sendemail">
+				<h2>Send Email</h2>
+				<div class="container_form">
+					<form class="secondform">
+						<input type="text" name="yourname" placeholder="Your Name" required>
+						<input type="email" name="email" placeholder="Email" required>
+						<textarea name="message" rows="15" placeholder="Type your message..."></textarea>
+						<div class="box">
+							<input type="checkbox" id="info2">
+							<label for="info2">Send a copy to my Email</label>
+						</div>
+						<input type="submit" name="submit" value="Send Email">
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="column">
+			<div class="form signin">
+				<h2>Sign In Form</h2>
+				<div class="container_form">
+					<form class="thirdform">
+						<input type="text" name="username" placeholder="Username" required>
+						<input type="password" name="password" placeholder="Password" required>
+						<div class="box">
+							<input type="checkbox" id="info3">
+							<label for="info3">Remember me</label>
+							<input type="submit" name="submit" value="Sign in" class="btn_margin">
+						</div>
+					</form>
+				</div>
+			</div>
+
+					<div class="form recover">
+						<h2>Recover Form</h2>
+						<div class="container_form">
+							<form class="fourthform">
+								<input type="email" name="email" placeholder="Enter Your Email" required>
+								<input type="tel" name="phone" placeholder="Enter Your Phone Number" required>
+								<div class="box box2">
+									<input type="submit" name="submit" value="Send" id="send">
+									<input type="button" name="button" value="Done" id="done" disabled>
+								</div>
+							</form>
+						</div>
+					</div>
+
+				<div class="form subscribe">
+					<h2>Subscribe Form</h2>
+					<div class="container_form">
+						<form class="fifthform">
+							<input type="email" name="email" placeholder="Email">
+							<div class="box box2">
+								<input type="submit" name="submit" value="Subscribe">
+								<input type="button" name="button" value="No, thanks">
+							</div>
+						</form>
+					</div>
+				</div>
+				<footer>
+					<div class="fot">
+						<div class="logo">
+							<img src="pics/headerpic1small.png">
+						</div>
+						<div class="main_text">
+							<img src="pics/headerpic2small.png">
+						</div>
+					</div>
+						<div class="image"><img src="pics/headerpic3.png"></div>
+				</footer>
+			</div>
+		</div>
+	</section>
+</div>
+<script type="text/javascript">
+		document.getElementById("send").addEventListener("click", colorChange);
+
+		function colorChange(x) {
+			var btn1 = document.getElementById("done");
+			btn1.style.backgroundColor = "green";
+		}
+</script>
+</body>
+</html>

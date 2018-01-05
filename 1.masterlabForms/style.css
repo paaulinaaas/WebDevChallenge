@@ -1,0 +1,161 @@
+body {
+	font-family: 'Titillium Web', sans-serif;
+	box-sizing: border-box;
+	background-image: url(pics/wallpaper.jpg);
+	background-size: cover;
+	margin: 25px 25px;
+}
+#wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0.4;
+}
+.logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 20px 0 10px;
+}
+.text {
+
+}
+section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+h2 {
+	color: #fff;
+	font-weight: 600;
+	font-size: 30px;
+	text-align: center;
+	text-shadow: 2px 2px #4D111E;
+	letter-spacing: 1.2px;
+	margin: 25px 0 5px;
+}
+.column {
+	display: flex;
+	flex-direction: column;
+	margin: 5px;
+}
+.container_form {
+	display: flex;
+	padding: 25px;
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 1%;
+}
+form {
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+	background-color: #F4F4F4;
+	border-radius: 1%;
+	width: 385px;
+}
+input {
+	margin: 10px;
+	border: 1px solid #DDDDDD;
+	border-radius: 3px;
+	height: 35px;
+	padding-left: 75px;
+	background-position: 15px 5px;
+	background-repeat: no-repeat;
+}
+input[type=text] {
+	background-image: url(pics/person.png);
+}
+input[type=email] {
+	background-image: url(pics/email.png);
+	background-position: 15px 8px;
+}
+input[type=password] {
+	background-image: url(pics/password.png);
+	background-position: 15px 3px;
+}
+input[type=tel] {
+	background-image: url(pics/phone.png);
+	background-position: 15px 4px;
+}
+input[class="location"] {
+	background-image: url(pics/location.png);
+	background-position: 15px 3px;
+}
+input[type=submit] {
+	background-color: #92cf2a;
+	background: linear-gradient(180deg, rgba(156,212,54,1) 0%, rgba(70,163,39,1) 100%);
+	height: 50px;
+	text-align: center;
+	padding: 0;
+	font-size: 20px;
+	letter-spacing: 1px;
+	color: #fff;
+	text-shadow: 1px 1px #5b742f;
+	border: 0.4px solid #5b742f;
+	cursor: pointer;
+}
+input[type=checkbox] {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.box {
+	display: flex;
+	align-items: center;
+}
+.box2 {
+	justify-content: space-between;
+}
+.box input[type=button],
+.box input[type=submit] {
+	width: 150px;
+	font-size: 18px;
+	cursor: pointer;
+}
+.box input[type=button] {
+	height: 50px;
+	letter-spacing: 1px;
+	color: #fff;
+	text-align: center;
+	padding: 0;
+	text-shadow: 1px 1px #5b742f;
+	border: 0.4px solid #5b742f;
+}
+input[type=submit]:hover,
+input[type=button]:not(:nth-child(2n)):hover {
+	background: linear-gradient(180deg, rgba(156,212,54,1) 0%, rgba(46,107,26,1) 100%);
+	transition: .3s;
+}
+.fifthform .box input[type=button] {
+	background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(222,0,0,1) 100%);
+}
+.fifthform .box input[type=button]:hover {
+	background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(158,0,0,1) 100%);
+}
+.btn_margin {
+	margin-left: 90px;
+}
+#done {
+	cursor: no-drop;
+	background-color: #c1de9f;
+}
+footer {
+	display: flex;
+	flex-direction: column;
+	margin: 50px 20px;
+	width: 400px;
+	justify-content: center;
+	opacity: 0.4;
+}
+.fot {
+	display: flex;
+	justify-content: center;
+}
+.image {
+	width: 400px;
+	padding-left: 125px;
+}
